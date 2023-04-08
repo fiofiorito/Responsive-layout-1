@@ -1,0 +1,122 @@
+/* INSTRUCTIONS
+ *
+ * 1) Keep the text inside .intro-content
+ *    in the same place, but have the background
+ *    extend from one side of the viewport
+ *    to the other, no matter how wide or narrow
+ *    the browser is.
+ *
+ * 2) Limit the maximum width of the text in the
+ *    bottom area.
+ *
+ * You may modify the HTML if needed
+ * (you probably should for this challenge)
+ *
+ */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* section 1 */
+
+.colored-bg {
+  background: #23424a;
+  margin: 0;
+  padding: 3.125rem 0;
+}
+
+.container { /* This targets both sections, makes the code cleaner */
+  margin: 0 auto;
+  width: 80%;
+  max-width: 900px;
+  font-family: Roboto, sans-serif;
+}
+
+.intro-content {
+  width: 50%;
+  color: white;
+}
+
+.intro-img {
+  align-self: flex-start;
+}
+
+h1 {
+  font-weight: 900;
+  font-size: 1.7rem;
+}
+
+.colored-bg p {
+  font-weight: 300;
+  padding: 0.5em 0 2em;
+}
+
+.button {
+  background-color: #38CFD9;
+  mix-blend-mode: normal;
+  border-radius: 31.5px;
+  border: none;
+  padding: 0.8em 1.5em;
+  font-family: Roboto, sans-serif;
+  font-weight: 700;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #23424a;
+  box-shadow: -2px 2px 4px #136C72;
+}
+
+.button:hover {
+  background-color: #136C72;
+  color: #fff;
+  box-shadow: -2px 2px 4px #38CFD9;
+}
+
+/* section 2 */
+
+.row {
+/* this is the flex container */
+  display: flex;
+  justify-content: space-between;
+}
+
+.col {
+  /* this is the flex item */
+  /* margin: 10px; */
+  text-align: center;
+  padding: 0 10px;
+  width: 100%;
+  padding: 3em 0;
+}
+ 
+.col + .col {
+  margin-left: 30px;
+} 
+
+.col h2 {
+  color: #87629A;
+}
+
+/* section 3 */
+
+.container-diff {
+  background-color: #006475;
+  color: white;
+  margin: 0;
+  width: 100%;
+}
+
+.container-diff .row .col h2 {
+  color: white;
+}
+
+
